@@ -13,6 +13,6 @@ const tournamentSchema = new mongoose.Schema<Tournament>({
   participants: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }],
 });
 
-const Tournament = mongoose.model<Tournament>('Tournament', tournamentSchema);
+const Tournament = mongoose.models.Tournament || mongoose.model<Tournament>('Tournament', tournamentSchema);
 
 export default Tournament;

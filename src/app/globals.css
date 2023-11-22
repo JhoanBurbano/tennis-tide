@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body {
-  background-color: #22f;
+  background-color: #1000a4;
+  background: url('https://burbanostudio-assets.s3.us-east-2.amazonaws.com/projects/tenistide/bg-xl.jpg');
   min-height: 100vh;
 }
 
@@ -21,10 +22,32 @@ tr {
 
 tr:hover {
   cursor: pointer;
-  background: #ffff00;
+  background: #ffff27;
   color: black;
 }
 
 td {
 text-align: center;
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: 10px;
+    scrollbar-color: #1000a4;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #1000a4;
+    border-radius: 10px;
+    border: none;
+  }
